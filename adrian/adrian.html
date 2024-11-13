@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adrian</title>
+    <title>ToDo List | Adrian</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h2>Página de Adrian</h2>
-</body>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>ToDo List</h1>
+
+      <div id="search-container">
+	<input id="search-task" type="text" placeholder="Buscar tarea..." />
+      </div>
+
+      <br>
+
+      <div id="input-container">
+	<input id="name-task" type="text" required placeholder="Name of your Task">
+	<input id="dscrp-task" type="text" placeholder="Describe your task...">
+	<button id="add-task" type="submit">Add Task</button>
+      </div>
+
+      <section id="task-container"></section>
+
+      <div id="pagination">
+	<button id="prev-page">Anterior</button>
+	<span id="page-info">Página 1 de 1</span>
+	<button id="next-page">Siguiente</button>
+      </div>
+    </main>
+  </body>
 </html>
+
